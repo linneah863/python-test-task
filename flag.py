@@ -8,16 +8,17 @@ def flag(N):
     for i in range(1, N//2+1):
         line = '#'+' '*(N+N//2-i)+'*'+'o'*(i-1)
         half_flag.append(line + line[::-1])
-    for x in half_flag:
-        print(x)
+    flag_string = '\n'.join(half_flag)
     half_flag.reverse()
-    for x in half_flag:
-        print(x)
+    flag_string = flag_string + '\n' + '\n'.join(half_flag)
+    return flag_string
+
+
 N = input("Введите натуральное чётное число: ")
 
 if N.isdigit() and int(N)%2==0:
     N = int(N)
-    flag(N)
+    print(flag(N))
 else:
     raise ArgumentError(None, "Не является натуральным чётным числом.")
 
