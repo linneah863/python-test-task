@@ -21,31 +21,3 @@ if N.isdigit() and int(N)%2==0:
     print(flag(N))
 else:
     raise ArgumentError(None, "Не является натуральным чётным числом.")
-
-
-
-
-
-
-
-
-# M = ['########', '#      #', '#  **  #']
-# for x in M:
-#     print(x)
-# M.reverse()
-# for x in M:
-#     print(x)
-
-# line2 = '#   '
-# line3 = '#  *'
-# m  = []
-# m.append('#'*4*2)
-# line2 = line2 + line2[::-1]
-# m.append(line2)
-# line3 = line3 + line3[::-1]
-# m.append(line3)
-# for x in m:
-#     print(x)
-# m.reverse()
-# for x in m:
-#     print(x)
